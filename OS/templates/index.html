@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patient Risk Prediction</title>
+</head>
+<body>
+    <h1>Patient Risk Prediction</h1>
+    <form action="/predict" method="post">
+        <label>Age:</label>
+        <input type="number" name="age" required><br>
+        <label>Blood Pressure (bp):</label>
+        <input type="number" name="bp" required><br>
+        <label>Heart Rate:</label>
+        <input type="number" name="heart_rate" required><br>
+        <label>Comorbidity Score:</label>
+        <input type="number" name="comorbidity_score" required><br>
+        <button type="submit">Predict Risk</button><br>
+        <a href ="/dashboard">View Dashboard</a>
+    </form>
+</body>
+</html>
+
+
