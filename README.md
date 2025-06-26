@@ -1,21 +1,25 @@
-# 🏥 Dynamic Resource Allocation Framework for Hospital Management Using Risk-Aware Scheduling
+# Dynamic Resource Allocation Framework for Hospital Management Using Risk-Aware Scheduling
 
 
-## 🚀 Project Overview
+## Project Overview
 
 This project simulates a real-time hospital triage system using core Operating System concepts like dynamic scheduling, interrupt handling, and safe resource allocation—combined with machine learning for patient risk prediction.
 
 In emergency situations like pandemics, where resources such as ICU beds, ventilators, and doctors are limited, manual allocation can be slow and unsafe. Our system predicts the risk level of each patient using a trained ML model and dynamically allocates resources using an interrupt-aware rule-based allocator.
 
+## 📸 Preview
+![Dashboard](https://github.com/user-attachments/assets/f50ac36d-1115-445d-93f5-66e9c55e5bcd)
+![image](https://github.com/user-attachments/assets/70241c1a-0b5e-49d1-8c73-d9c4f3ac5075)
 
-## 🧠 Key Features
 
-- 🧬 **Machine Learning Risk Prediction** (Decision Tree Classifier)
-- ⚙️ **Interrupt-driven Resource Allocation**
-- 🔄 **Safe state resource management**
-- 🌐 **Flask RESTful APIs** (`/predict`, `/allocate`, `/dashboard`)
-- 📊 **Interactive Dashboard** with Chart.js bar/pie visualizations
-- 🛠️ **Modular Flask structure** with clear separation of model, allocator, routes, and frontend
+## Key Features
+
+- **Machine Learning Risk Prediction** (Decision Tree Classifier)
+- **Interrupt-driven Resource Allocation**
+- **Safe state resource management**
+- **Flask RESTful APIs** (`/predict`, `/allocate`, `/dashboard`)
+- **Interactive Dashboard** with Chart.js bar/pie visualizations
+- **Modular Flask structure** with clear separation of model, allocator, routes, and frontend
 
 
 ## 📁 Project Structure
@@ -51,7 +55,7 @@ OS/
 └── README.md
 
 
-## 🧪 How It Works
+## How It Works
 
 1. A user submits patient data through the frontend (age, BP, heart rate, comorbidity score).
 2. The backend predicts the **risk level (0 or 1)** using a trained ML model.
@@ -60,7 +64,7 @@ OS/
 5. The dashboard updates charts in real-time to reflect system state.
 
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **Python 3.11**
 - **Flask** (API development)
@@ -72,16 +76,16 @@ OS/
 
 ## 💡 Future Scope
 
-- 🔄 **Advanced Scheduling Algorithms**: Incorporate algorithms like Round Robin or Priority Scheduling for multi-patient queue simulation.
-- 🧠 **Enhanced ML Model**: Upgrade to ensemble models (e.g., Random Forest, XGBoost) or deep learning to improve prediction accuracy.
-- 📈 **Historical Analytics**: Add time-series data storage and visual trends to observe ICU usage over time.
-- 🌍 **Real Hospital Integration**: Connect to real-time hospital data using APIs from IoT devices or hospital databases.
-- 🧪 **Load Simulation Testing**: Simulate thousands of requests using tools like JMeter to analyze system performance under load.
-- 🔐 **Security Layer**: Add login systems and role-based access (admin vs. staff) for data privacy and control.
-- 📊 **More Charts and Analytics**: Introduce line graphs, risk progression plots, and patient recovery tracking.
-- 🧑‍⚕️ **Doctor Feedback System**: Add optional manual override inputs for doctors in edge cases.
+- **Advanced Scheduling Algorithms**: Incorporate algorithms like Round Robin or Priority Scheduling for multi-patient queue simulation.
+- **Enhanced ML Model**: Upgrade to ensemble models (e.g., Random Forest, XGBoost) or deep learning to improve prediction accuracy.
+- **Historical Analytics**: Add time-series data storage and visual trends to observe ICU usage over time.
+- **Real Hospital Integration**: Connect to real-time hospital data using APIs from IoT devices or hospital databases.
+- **Load Simulation Testing**: Simulate thousands of requests using tools like JMeter to analyze system performance under load.
+- **Security Layer**: Add login systems and role-based access (admin vs. staff) for data privacy and control.
+- **More Charts and Analytics**: Introduce line graphs, risk progression plots, and patient recovery tracking.
+- **Doctor Feedback System**: Add optional manual override inputs for doctors in edge cases.
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository**
 
